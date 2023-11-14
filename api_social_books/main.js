@@ -12,11 +12,11 @@ btnBuscar.onclick = function(){
         }
     })
     .then(data => {
+        document.querySelector('#id').textContent = data.id
         document.querySelector('#nome').textContent = data.nome
-        document.querySelector('#livro').textContent = data.livro
         document.querySelector('#editora').textContent = data.editora
-        document.querySelector('#publicação').textContent = data.publicação
         document.querySelector('#resumo').textContent = data.resumo
+        document.querySelector('#autor').textContent = data.autor
         //E outros atributos que você desejar
     })
     .catch(error => {

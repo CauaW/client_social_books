@@ -7,23 +7,23 @@
     <title>Consulta livros</title>
 </head>
 <body>
-    <label for="git_id">Usuario: </label>
+    <label for="git_id">Nome do livro: </label>
     <input type="text" name="git_id" id="git_id">
     <input type="button" value="Buscar">
     <br> <br>
     <div class="tabela">
         <!-- Rótulo -->
+        <div class="rotulo-coluna">Id</div>
         <div class="rotulo-coluna">Nome</div>
-        <div class="rotulo-coluna">Livro</div>
         <div class="rotulo-coluna">Editora</div>
-        <div class="rotulo-coluna">Publicação</div>
         <div class="rotulo-coluna">Resumo</div>
+        <div class="rotulo-coluna">Autor</div>
         <!-- Dados -->
+        <div class="celula" id="id"></div>
         <div class="celula" id="nome"></div>
-        <div class="celula" id="livro"></div>
         <div class="celula" id="editora"></div>
-        <div class="celula" id="publicação"></div>
-        <div class="celula" id="resumo"> </div>
+        <div class="celula" id="resumo"></div>
+        <div class="celula" id="autor"> </div>
     </div>   
     <script src="main.js"></script> 
 
